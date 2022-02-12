@@ -182,20 +182,22 @@ function ULib:Window(title)
 	end
 	local t1t=false
 	local t1 = Toggle
-	if t1t == false then
-		t1t = true
-	else
-		t1t=false
-	end
-	if t1t == true then
-		tweenRotation(t1, 1, 0)
-		wait(1)
-		PageFrame.Visible = false
-	else
-		tweenRotation(t1, 1, 90)
-		wait(1)
-		PageFrame.Visible = true
-	end
+	t1.MouseButton1Click:Connect(function()
+		if t1t == false then
+			t1t = true
+		else
+			t1t=false
+		end
+		if t1t == true then
+			tweenRotation(t1, 1, 0)
+			wait(1)
+			PageFrame.Visible = false
+		else
+			tweenRotation(t1, 1, 90)
+			wait(1)
+			PageFrame.Visible = true
+		end
+	end)
 	local Children = {}
 	function Children:AddButton(text, callback)
 		local bttn = Instance.new("TextButton")
