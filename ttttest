@@ -180,7 +180,6 @@ function ULib:Window(title)
 			}
 		tw:Create(tr,info,g):Play()
 	end
-	--[[
 	local t1t=false
 	Toggle.MouseButton1Click:Connect(function()
 		if t1t == false then
@@ -198,7 +197,6 @@ function ULib:Window(title)
 			PageFrame.Visible = true
 		end
 	end)
-	]]
 	local Children = {}
 	function Children:AddButton(text, callback)
 		local bttn = Instance.new("TextButton")
