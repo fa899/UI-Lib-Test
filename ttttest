@@ -131,7 +131,7 @@ function ULib:Window(title)
 
 	local UserInputService = game:GetService("UserInputService")
 
-	local gui = script.Parent
+	local gui = Page
 
 	local dragging
 	local dragInput
