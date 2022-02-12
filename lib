@@ -262,6 +262,9 @@ function ULib:Window(title)
 		ToggleFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
 		ToggleFrame.Position = UDim2.new(0.893300176, 0, 0.142857149, 0)
 		ToggleFrame.Size = UDim2.new(0, 36, 0, 19)
+		ToggleFrameCorner.CornerRadius = UDim.new(1, 0)
+		ToggleFrameCorner.Name = "ToggleFrameCorner"
+		ToggleFrameCorner.Parent = ToggleFrame
 		Toggle.MouseButton1Click:Connect(
 			function()
 				Toggled = not Toggled
