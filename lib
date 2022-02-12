@@ -202,8 +202,9 @@ function ULib:Window(title)
 		local bttn = Instance.new("TextButton")
 		local yes = Instance.new("UICorner")
 		yes.CornerRadius = UDim.new(0, 4)
+		yes.Parent = bttn
 		bttn.Parent = PageFrame
-		bttn.Size = UDim2.new(0, 85,0, 30)
+		bttn.Size = UDim2.new(0, 305,0, 30)
 		bttn.BackgroundColor3 = Color3.fromRGB(13,13,13)
 		bttn.TextColor3 = Color3.fromRGB(255,255,255)
 		bttn.Font = Enum.Font.GothamSemibold
