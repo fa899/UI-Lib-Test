@@ -200,6 +200,8 @@ function ULib:Window(title)
 	local Children = {}
 	function Children:AddButton(text, callback)
 		local bttn = Instance.new("TextButton")
+		local yes = Instance.new("UICorner")
+		yes.CornerRadius = Vector2.new(0, 4)
 		bttn.Parent = PageFrame
 		bttn.Size = UDim2.new(0, 85,0, 30)
 		bttn.BackgroundColor3 = Color3.fromRGB(13,13,13)
