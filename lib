@@ -233,10 +233,9 @@ function ULib:Window(title)
 		
 		Toggle.Name = "Toggle"
 		Toggle.Parent = PageFrame
-		Toggle.BackgroundColor3 = Color3.fromRGB(32, 33, 37)
+		Toggle.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 		Toggle.Position = UDim2.new(-0.747557044, 0, 0.729113936, 0)
-		Toggle.Size = UDim2.new(0, 403, 0, 28)
-		Toggle.AutoButtonColor = false
+		Toggle.Size = UDim2.new(0, 305,0, 30)
 		Toggle.Font = Enum.Font.Gotham
 		Toggle.Text = ""
 		Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
