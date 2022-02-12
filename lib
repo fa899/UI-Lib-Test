@@ -257,9 +257,6 @@ function ULib:Window(title)
 		Title.TextSize = 14.000
 		Title.TextXAlignment = Enum.TextXAlignment.Left
 		
-		ToggleFrame.Name = "ToggleFrame"
-		ToggleFrame.Parent = Toggle
-		ToggleFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
 		ToggleFrame.Position = UDim2.new(0.893300176, 0, 0.142857149, 0)
 		ToggleFrame.Size = UDim2.new(0, 36, 0, 19)
 		Toggle.MouseButton1Click:Connect(
