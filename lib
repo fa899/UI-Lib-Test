@@ -269,7 +269,11 @@ function ULib:Window(title)
 			function()
 				Toggled = not Toggled
 				pcall(callback, Toggled)
-				ToggleFrame.BackgroundColor3 = Color3.fromRGB(0, 216, 0)
+				if Toggled then
+					ToggleFrame.BackgroundColor3 = Color3.fromRGB(0, 216, 0)
+				else
+					ToggleFrame.BackgroundColor3 = Color3.fromRGB(22, 23, 27)
+				end
 			end
 		)
 		return toggleB;
