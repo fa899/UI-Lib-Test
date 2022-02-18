@@ -85,7 +85,7 @@ UserInputService.InputBegan:Connect(
 		end
 	end
 )
-local function MakeWindow(title)
+function ULib:MakeWindow(title)
 	local Library = game.StarterGui
 	local Page = Instance.new("TextLabel")
 	local UICorner = Instance.new("UICorner")
